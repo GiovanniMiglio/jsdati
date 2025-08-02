@@ -16,36 +16,53 @@ console.log(array_1 [0][0],array_1 [1][0], array_1 [0][1],array_2 [4][0][0],arra
 
 //esercizio2
 
-function tiridadi() {
-    let tiri = prompt("quani tiri vuoi fare?")
-    if (tiri <= 0) {
-        console.log("inserisci un numero valido di tiri");
-        return;
+// function tiridadi() {
+//     let tiri = prompt("quani tiri vuoi fare?")
+//     if (tiri <= 0) {
+//         console.log("inserisci un numero valido di tiri");
+//         return;
         
-    }
+//     }
    
-    let punti1 = 0;
-    let punti2 = 0;
-    for (i = 0; i < tiri ; i++) {
-        let tiro = Math.floor(Math.random() * (6 - 1) + 1);
-        let tiro2 = Math.floor(Math.random() * (6 - 1) + 1);
-        punti1 += tiro;
-        punti2 += tiro2;
-       console.log(`Player 1 ha fatto ${punti1}punti`,`Player 2 ha fatto ${punti2}punti` );
+//     let punti1 = 0;
+//     let punti2 = 0;
+//     for (i = 0; i < tiri ; i++) {
+//         let tiro = Math.floor(Math.random() * (6 - 1) + 1);
+//         let tiro2 = Math.floor(Math.random() * (6 - 1) + 1);
+//         punti1 += tiro;
+//         punti2 += tiro2;
+//        console.log(`Player 1 ha fatto ${punti1}punti`,`Player 2 ha fatto ${punti2}punti` );
        
-    }
+//     }
    
     
-    if(punti1 > punti2){
-        console.log("Player 1 ha Vinto");
+//     if(punti1 > punti2){
+//         console.log("Player 1 ha Vinto");
         
-    }else if(punti1 < punti2){
-        console.log("Player 2 ha Vinto");
+//     }else if(punti1 < punti2){
+//         console.log("Player 2 ha Vinto");
         
-    }else{
-        console.log("Pareggio");
+//     }else{
+//         console.log("Pareggio");
         
-    }
-}
+//     }
+// }
 
-    tiridadi()
+//     tiridadi()
+// esercizio 3
+
+function Conta(n) {
+    for (let i = 1; i <=n ; i++) {
+        if (i % 15 === 0) {
+          console.log("FizzBuzz");  
+        } else if (i % 5 === 0){
+            console.log("Buzz")
+        }else if(i % 3 === 0){
+            console.log("Fizz")
+        }else{
+     console.log(i);
+        }
+     
+    } 
+}
+Conta(50)
